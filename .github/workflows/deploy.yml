@@ -1,37 +1,32 @@
-# .github > workflows > deploy.yml
-name: Deploy
+# name 可以自定义
+name: Deploy GitHub Pages
 
+# 触发条件：在 push 到 main/master 分支后，新的 Github 项目 应该都是 main，而之前的项目一般都是 master
 on:
-   push:
-      branches:
-         - master
+  push:
+    branches:
+      - master
 
+# 任务
 jobs:
-   deploy:
-      runs-on: ubuntu-latest
-      steps:
-         - uses: actions/checkout@v3
-           with:
-              fetch-depth: 0
-         - uses: actions/setup-node@v3
-           with:
-              node-version: 20
-              cache: npm
-         - run: npm install --frozen-lockfile
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-         - name: Build
-           run: npm run docs:build
+      # 生成静态文件
+      - name: Build
+        run: npm install && npm run docs:build
 
-         - name: Deploy
-            # 将构建产物 commit 到一个分支上，用于发布静态站点资源
-            # https://github.com/peaceiris/actions-gh-pages
-            #不要将peaceiris改为自己的仓库名，我单纯的以为这个需要改成自己的仓库名，部署上去就build失败了，需引用该仓库的配置
-           uses: peaceiris/actions-gh-pages@v3
-           with:
-              # Github 会在 workflow 中自动生成 GIHUBT_TOKEN，用于认证 workflow 的运行
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              # 静态资源目录设置
-              publish_dir: docs/.vitepress/dist
-              # 默认发布到 gh-pages 分支上，可以指定特定的发布分支（不能选拉取代码的分支）
-              publish_branch: gh-pages
-              full_commit_message: ${{ github.event.head_commit.message }}
+      # 部署到 GitHub Pages
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.Lwqsky-docs }} # 也就是我们刚才生成的 secret
+          BRANCH: gh-pages # 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
+          FOLDER: docs/.vuepress/dist # vuepress 生成的静态文件存放的地方
