@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Python
-      link: ./Python
+      link: /python
     - theme: brand
       text: Linux
-      link: /Linux
+      link: /linux
     - theme: brand
       text: Markdown
       link: /markdown
