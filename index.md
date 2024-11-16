@@ -53,6 +53,7 @@ features:
 >- [参考网站](https://graython.us.kg/#/home)
 >- [星梦启航](https://cpython666.github.io/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%84%B1%E5%8D%95%E6%8C%87%E5%8D%97.html)
 >- [自动生成侧边栏的插件](https://github.com/luciozhang/vitepress-plugin-autobar)
+>- [无穷尽设计可能](https://www.seeseed.com/)
 <br>
 
 
