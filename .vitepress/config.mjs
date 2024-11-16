@@ -4,6 +4,7 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/lwqsky-docs/',
   title: "LwqSky",
   description: "困难是全力以赴做到最好的机会！",
   themeConfig: {
