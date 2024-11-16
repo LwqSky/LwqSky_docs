@@ -12,7 +12,7 @@ export default defineConfig({
 
     // 站点标题
     siteTitle: 'LwqSky',
-    logo: '../public/头像.png',
+    logo: '/public/head.png',
 
 
     // 导航栏
