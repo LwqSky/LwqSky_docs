@@ -5,7 +5,7 @@ import './style.css'
 
 /** @type {import('vitepress').Theme} */
 export default {
-  base: '/LwqSky-docs/',
+  
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
