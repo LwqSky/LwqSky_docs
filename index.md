@@ -7,7 +7,7 @@ hero:
   text: "困难是你全力以赴做到最好的机会！"
   tagline: "始于兴趣、终于热爱"
   image:
-    src: /LwqSky_docs/public/logo.png
+    src: /public/logo.png
     alt: LwqSky
   actions:
     - theme: brand
