@@ -55,6 +55,8 @@ features:
 >- [自动生成侧边栏的插件](https://github.com/luciozhang/vitepress-plugin-autobar)
 >- [无穷尽设计可能](https://www.seeseed.com/)
 >- [开源项目汇总](https://hellogithub.com/?sort_by=featured&rank_by=yearly&tid=all)
+>- [markdown转ppt](https://cn.sli.dev/)
+>- [网站图片爬取](https://extract.pics/)
 
 <br>
 
