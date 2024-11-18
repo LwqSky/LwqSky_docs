@@ -57,6 +57,7 @@ features:
 >- [开源项目汇总](https://hellogithub.com/?sort_by=featured&rank_by=yearly&tid=all)
 >- [markdown转ppt](https://cn.sli.dev/)
 >- [网站图片爬取](https://extract.pics/)
+>- [大佬网站教学](https://vitepress.yiov.top/)
 
 <br>
 

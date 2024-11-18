@@ -5,6 +5,7 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   //base: '/LwqSky_docs/',
+  
   title: "LwqSky",
   description: "困难是全力以赴做到最好的机会！",
   head: [["link", { rel: "icon", href: "/icon/火影忍者.svg" }]],
@@ -18,6 +19,7 @@ export default defineConfig({
 
     // 导航栏
     nav: [
+      { text: '导航', link: '/nav' },
       { text: 'Home', link: '/' },
       { text: 'Python', link: '/python' },
       { text: 'Linux', link: '/linux' },
