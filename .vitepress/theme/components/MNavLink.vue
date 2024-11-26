@@ -6,9 +6,7 @@ import { slugify } from '@mdit-vue/shared'
 import { NavLink } from '../utils/types'
 
 const props = defineProps<{
-  noIcon?: boolean
   icon?: NavLink['icon']
-  badge?: NavLink['badge']
   title?: NavLink['title']
   desc?: NavLink['desc']
   link: NavLink['link']
@@ -25,34 +23,22 @@ const svg = computed(() => {
   if (typeof props.icon === 'object') return props.icon.svg
   return ''
 })
-
-const formatBadge = computed(() => {
-  if (typeof props.badge === 'string') {
-    return { text: props.badge, type: 'info' }
-  }
-  return props.badge
-})
 </script>
 
 <template>
   <a v-if="link" class="m-nav-link" :href="link" target="_blank" rel="noreferrer">
-    <article class="box" :class="{ 'has-badge': formatBadge }">
+    <article class="box">
       <div class="box-header">
-        <template v-if="!noIcon">
-          <div v-if="svg" class="icon" v-html="svg"></div>
-          <div v-else-if="icon && typeof icon === 'string'" class="icon">
-            <img
+        <div v-if="svg" class="icon" v-html="svg"></div>
+        <div v-else-if="icon && typeof icon === 'string'" class="icon">
+          <img
               :src="withBase(icon)"
               :alt="title"
               onerror="this.parentElement.style.display='none'"
-            />
-          </div>
-        </template>
-        <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">
-          {{ title }}
-        </h5>
+          />
+        </div>
+        <h5 v-if="title" :id="formatTitle" class="title">{{ title }}</h5>
       </div>
-      <Badge v-if="formatBadge" class="badge" :type="formatBadge.type" :text="formatBadge.text" />
       <p v-if="desc" class="desc">{{ desc }}</p>
     </article>
   </a>
@@ -60,34 +46,30 @@ const formatBadge = computed(() => {
 
 <style lang="scss" scoped>
 .m-nav-link {
-  --m-nav-icon-box-size: 50px;
-  --m-nav-icon-size: 45px;
+  --m-nav-icon-box-size: 40px;
+  --m-nav-icon-size: 24px;
   --m-nav-box-gap: 12px;
 
   display: block;
   border: 1px solid var(--vp-c-bg-soft);
-  border-radius: 12px;
+  border-radius: 8px;
   height: 100%;
-  background-color: var(--vp-c-bg-soft);
+  text-decoration: inherit;
+  background-color: var(--vp-c-bg-alt);
   transition: all 0.25s;
   &:hover {
     box-shadow: var(--vp-shadow-2);
-    border-color: var(--vp-c-brand);//悬停边框色
+    border-color: var(--vp-c-brand);
     text-decoration: initial;
-    background-color: var(--vp-c-bg-soft-up);//悬停背景色
-    transform: translateY(-5px);
+    background-color: var(--vp-c-bg);
   }
 
   .box {
     display: flex;
     flex-direction: column;
-    position: relative;
     padding: var(--m-nav-box-gap);
     height: 100%;
     color: var(--vp-c-text-1);
-    &.has-badge {
-      padding-top: calc(var(--m-nav-box-gap) + 2px);
-    }
     &-header {
       display: flex;
       align-items: center;
@@ -103,7 +85,7 @@ const formatBadge = computed(() => {
     width: var(--m-nav-icon-box-size);
     height: var(--m-nav-icon-box-size);
     font-size: var(--m-nav-icon-size);
-    background-color: var(--vp-c-bg-soft-down);
+    background-color: var(--vp-c-default-soft);
     transition: background-color 0.25s;
     :deep(svg) {
       width: var(--m-nav-icon-size);
@@ -120,18 +102,9 @@ const formatBadge = computed(() => {
     flex-grow: 1;
     white-space: nowrap;
     text-overflow: ellipsis;
+    line-height: var(--m-nav-icon-box-size);
     font-size: 16px;
     font-weight: 600;
-    &:not(.no-icon) {
-      line-height: var(--m-nav-icon-box-size);
-    }
-  }
-
-  .badge {
-    position: absolute;
-    top: 2px;
-    right: 0;
-    transform: scale(0.8);
   }
 
   .desc {

@@ -1,18 +1,19 @@
 ---
-layout: doc
 layoutClass: m-nav-layout
-sidebar: false
-prev: false
-next: false
+outline: [2, 3, 4]
 ---
 
-<style src="../.vitepress/theme/style/nav.scss"></style>
-
 <script setup>
-import { NAV_DATA } from '../.vitepress/theme/utils/data.ts'
+import { NAV_DATA } from './data'
 </script>
+<style src="./index.scss"></style>
 
-
-# 我的导航
+# 前端导航
 
 <MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/>
+
+<br />
+
+::: tip
+参考<https://github.com/maomao1996/vitepress-nav-template>
+:::

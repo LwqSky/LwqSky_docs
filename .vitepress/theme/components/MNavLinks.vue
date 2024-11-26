@@ -7,7 +7,6 @@ import type { NavLink } from '../utils/types'
 
 const props = defineProps<{
   title: string
-  noIcon?: boolean
   items: NavLink[]
 }>()
 
@@ -22,7 +21,14 @@ const formatTitle = computed(() => {
     <a class="header-anchor" :href="`#${formatTitle}`" aria-hidden="true"></a>
   </h2>
   <div class="m-nav-links">
-    <MNavLink v-for="item in items" :noIcon="noIcon" v-bind="item" />
+    <MNavLink
+        v-for="{ icon, title, desc, link } in items"
+        :key="link"
+        :icon="icon"
+        :title="title"
+        :desc="desc"
+        :link="link"
+    />
   </div>
 </template>
 
@@ -30,7 +36,7 @@ const formatTitle = computed(() => {
 .m-nav-links {
   --m-nav-gap: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   grid-row-gap: var(--m-nav-gap);
   grid-column-gap: var(--m-nav-gap);
   grid-auto-flow: row dense;

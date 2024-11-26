@@ -17,16 +17,15 @@
     max-width: 224px;
   }
 
-  .content .copyright {
-    display: none;
-  }
-
-  /* tip */
-  .tip {
+  /* custom-block */
+  .custom-block {
     .custom-block-title {
-      display: none;
+      font-size: var(--vp-custom-block-font-size);
     }
-    p {
+    ul {
+      margin: 8px 0;
+    }
+    li {
       margin: 0;
     }
   }
@@ -34,11 +33,4 @@
   .vp-doc h2 {
     margin-top: 24px;
   }
-}
-.medium-zoom-overlay {
-  z-index: 0;
-}
-  
-.medium-zoom-image {
-  z-index: 0 !important;
 }
