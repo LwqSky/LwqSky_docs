@@ -14,6 +14,3 @@ import { NAV_DATA } from './data'
 
 <br />
 
-::: tip
-参考<https://github.com/maomao1996/vitepress-nav-template>
-:::

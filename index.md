@@ -44,21 +44,16 @@ features:
 ---
 
 >## 参考文献
->- [ 兔子先生的博客 ](https://segmentfault.com/a/1190000045316623)
->- [极客侠](https://docs.geeksman.com/)
->- [VitePress](https://vitepress.dev/zh/)
->- [阿里巴巴矢量图标库](https://www.iconfont.cn/)
->- [参考文档站](https://docs.zhengxinonly.com/)
->- [大佬的博客](https://theme.sugarat.top/)
->- [参考网站](https://graython.us.kg/#/home)
->- [星梦启航](https://cpython666.github.io/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/%E7%A8%8B%E5%BA%8F%E5%91%98%E8%84%B1%E5%8D%95%E6%8C%87%E5%8D%97.html)
->- [自动生成侧边栏的插件](https://github.com/luciozhang/vitepress-plugin-autobar)
->- [无穷尽设计可能](https://www.seeseed.com/)
->- [开源项目汇总](https://hellogithub.com/?sort_by=featured&rank_by=yearly&tid=all)
+
+
+
+
+
+
 >- [markdown转ppt](https://cn.sli.dev/)
 >- [网站图片爬取](https://extract.pics/)
 >- [大佬网站教学](https://vitepress.yiov.top/)
-1
+
 <br>
 
 

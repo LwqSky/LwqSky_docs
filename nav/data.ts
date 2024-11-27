@@ -39,6 +39,12 @@ export const NAV_DATA: NavData[] = [
         desc: 'JSON 在线解析及格式化验证',
         link: 'https://www.json.cn',
       },
+      {
+        icon: 'https://extract.pics/logo.svg',
+        title: '网站图片爬取',
+        desc: 'Extract images from any public website',
+        link: 'https://extract.pics/',
+      },
     ],
   },
   {
@@ -67,7 +73,7 @@ export const NAV_DATA: NavData[] = [
     ],
   },
   {
-    title: '茂茂的站点导航',
+    title: '站点导航',
     items: [
       {
         icon: '/logo.png',
@@ -92,6 +98,24 @@ export const NAV_DATA: NavData[] = [
         title: 'mmPlayer',
         desc: 'mmPlayer 在线音乐播放器',
         link: 'https://netease-music.fe-mm.com',
+      },
+      {
+        icon: 'https://img.hellogithub.com/logo/logo.png',
+        title: '开源项目推荐',
+        desc: '一个发现和分享有趣、入门级开源项目的平台',
+        link: 'https://hellogithub.com/',
+      },
+      {
+        icon: '',
+        title: '无穷尽设计可能',
+        desc: '源源不断分享设计好站',
+        link: 'https://www.seeseed.com/',
+      },
+      {
+        icon: 'https://avatars.githubusercontent.com/u/24606443?v=4',
+        title: '茂茂',
+        desc: '导航页设计来源',
+        link: 'https://github.com/maomao1996',
       },
     ],
   },
@@ -602,5 +626,40 @@ export const NAV_DATA: NavData[] = [
         link: 'https://www.pixiv.net',
       },
     ],
+  },
+  {
+    title: '网站制作参考网站',
+    items: [
+      {
+        icon:'https://docs.geeksman.com/logo.png',
+        title: '极客侠',
+        link: 'https://docs.geeksman.com/',
+      },
+      {
+        icon:'https://docs.zhengxinonly.com/logo.svg',
+        title: '正心全栈编程',
+        link: 'https://docs.zhengxinonly.com/',
+      },
+      {
+        icon:'https://theme.sugarat.top/logo.png',
+        title: '简约风博客主题',
+        link: 'https://theme.sugarat.top/',
+      },
+      {
+        icon:'https://docs.zhengxinonly.com/logo.svg',
+        title: '星梦启航',
+        link: 'https://docs.zhengxinonly.com/',
+      },
+      {
+        icon:'https://docs.zhengxinonly.com/logo.svg',
+        title: '正心全栈编程',
+        link: 'https://docs.zhengxinonly.com/',
+      },
+      {
+        icon:'https://vitepress.yiov.top/logo.png',
+        title: 'vitepress上手指导手册',
+        link: 'https://vitepress.yiov.top/',
+      },
+    ]
   },
 ]
