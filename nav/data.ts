@@ -619,12 +619,6 @@ export const NAV_DATA: NavData[] = [
         // desc: '',
         link: 'https://twitter.com',
       },
-      {
-        icon: '/icons/pixiv.png',
-        title: 'Pixiv',
-        // desc: '',
-        link: 'https://www.pixiv.net',
-      },
     ],
   },
   {
@@ -633,31 +627,31 @@ export const NAV_DATA: NavData[] = [
       {
         icon:'https://docs.geeksman.com/logo.png',
         title: '极客侠',
+        desc: '简单教程文档栏',
         link: 'https://docs.geeksman.com/',
       },
       {
         icon:'https://docs.zhengxinonly.com/logo.svg',
         title: '正心全栈编程',
+        desc: '教程很精细的文档栏',
         link: 'https://docs.zhengxinonly.com/',
       },
       {
         icon:'https://theme.sugarat.top/logo.png',
         title: '简约风博客主题',
+        desc: '基于vitepress的博客主题，汇总了很多的教程文档',
         link: 'https://theme.sugarat.top/',
       },
       {
         icon:'https://docs.zhengxinonly.com/logo.svg',
         title: '星梦启航',
-        link: 'https://docs.zhengxinonly.com/',
-      },
-      {
-        icon:'https://docs.zhengxinonly.com/logo.svg',
-        title: '正心全栈编程',
+        desc: '一个python up开发，汇总了很多资源',
         link: 'https://docs.zhengxinonly.com/',
       },
       {
         icon:'https://vitepress.yiov.top/logo.png',
         title: 'vitepress上手指导手册',
+        desc: '大佬写的上手指导手册，详细的教程文档',
         link: 'https://vitepress.yiov.top/',
       },
     ]
