@@ -214,7 +214,7 @@ export const NAV_DATA: NavData[] = [
       {
         icon: 'https://cn.vuejs.org/logo.svg',
         title: 'Vue Router',
-        desc: 'Vue.js 的官方路由\n为 Vue.js 提供富有表现力、可配置的、方便的路由',
+        desc: 'Vue.js 的官方路由',
         link: 'https://router.vuejs.org/zh',
       },
       {
@@ -384,7 +384,7 @@ export const NAV_DATA: NavData[] = [
       {
         icon: 'https://antv.vision/icons/icon-72x72.png',
         title: 'AntV',
-        desc: '蚂蚁集团全新一代数据可视化解决方案，致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
+        desc: '致力于提供一套简单方便、专业可靠、无限可能的数据可视化最佳实践。',
         link: 'https://antv.vision/zh/',
       },
       {
@@ -502,7 +502,7 @@ export const NAV_DATA: NavData[] = [
       {
         icon: 'https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg',
         title: 'IconPark 图标库',
-        desc: 'IconPark图标库是一个通过技术驱动矢量图标样式的开源图标库，可以实现根据单一 SVG 源文件变换出多种主题， 具备丰富的分类、更轻量的代码和更灵活的使用场景；致力于构建高质量、统一化、可定义的图标资源，让大多数人都能够选择适合自己的风格图标',
+        desc: '一个通过技术驱动矢量图标样式的开源图标库',
         link: 'https://iconpark.oceanengine.com/official',
       },
       {
