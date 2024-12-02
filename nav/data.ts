@@ -654,6 +654,12 @@ export const NAV_DATA: NavData[] = [
         desc: '大佬写的上手指导手册，详细的教程文档',
         link: 'https://vitepress.yiov.top/',
       },
+      {
+        icon:'https://oml2d.com/logo-white.png',
+        title: 'OhMyLive2D',
+        desc: '高可自定义且开箱即用的 Live2D For Web 组件, 快速为您的个人网站加入Live2D看板娘',
+        link: 'https://oml2d.com/',
+      },
     ]
   },
 ]

@@ -20,7 +20,6 @@ export default {
     },  
   },
   
-  
   Layout: (props) => {
     // 获取 frontmatter
     const { frontmatter } = useData();
@@ -36,17 +35,27 @@ export default {
 
 
 
-  enhanceApp({ app, router, siteData }) {
+  async enhanceApp({ app, router, siteData }) {
     // 注册组件
     app.component('MNavLinks' , MNavLinks);
-  
+    // 加载 Live2D
+    if (!import.meta.env.SSR) {
+      const { loadOml2d } = await import('oh-my-live2d');
+      loadOml2d({
+        models: [
+          {
+            "path": "https://model.oml2d.com/cat-black/model.json",
+            "scale": 0.15,
+            "position": [0, 20],
+            "stageStyle": {
+              "height": 350
+            }
+          }
+        ]
+      });
+    }
 
 
-
-  }
-
-
-
-
+}
 
 }
