@@ -28,9 +28,9 @@ export default defineConfig({
       {
         text: '前端',
         items: [
-          { text: 'HTML', link: '/html' },
-          { text: 'CSS', link: '/css' },
-          { text: 'JavaScript', link: '/javascript' },
+          { text: 'HTML', link: '/web/html' },
+          { text: 'CSS', link: '/web/css' },
+          { text: 'JavaScript', link: '/web/javascript' },
         ]
       },
     ],
@@ -42,6 +42,9 @@ export default defineConfig({
     sidebar: {
       "/python": set_sidebar("/python"),
       "/markdown": set_sidebar("/markdown"),
+      "/web/html": set_sidebar("/web/html"),
+      "/web/css": set_sidebar("/web/css"),
+      "/web/javascript": set_sidebar("/web/javascript"),
     },
 
 
