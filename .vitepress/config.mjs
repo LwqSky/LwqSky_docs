@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from "./utils/auto_sidebar.mjs";
+import { set_sidebar } from "./theme/utils/auto_sidebar.mjs";
 
 
 // https://vitepress.dev/reference/site-config

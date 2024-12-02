@@ -2,6 +2,9 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import './utils/rainbow.css'//彩虹背景动画
+import './utils/blur.css'//导航栏毛玻璃
+import './utils/hidden.css'//隐藏横条
 import { useData } from 'vitepress'
 import MNavLinks from './components/MNavLinks.vue'
 
@@ -19,6 +22,7 @@ export default {
       },  
     },  
   },
+  
   
   Layout: (props) => {
     // 获取 frontmatter
