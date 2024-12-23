@@ -1,24 +1,29 @@
+<template>
+  <div class="m-nav-layout">
+    <slot></slot>
+  </div>
+</template>
+
+<style scoped lang="scss">
 .m-nav-layout {
   /* 覆盖全局的 vp-layout-max-width（仅当前页面使用） */
-  --vp-layout-max-width: 1660px;
-
-  /* layout 样式 */
-  .container {
-    max-width: var(--vp-layout-max-width) !important;
+  :deep(.container) {
+    max-width: 1660px !important;
   }
-  .content-container,
-  .content {
+  
+  :deep(.content-container),
+  :deep(.content) {
     max-width: 100% !important;
   }
 
   /* aside 样式 */
-  .aside {
+  :deep(.aside) {
     padding-left: 0;
     max-width: 224px;
   }
 
   /* custom-block */
-  .custom-block {
+  :deep(.custom-block) {
     .custom-block-title {
       font-size: var(--vp-custom-block-font-size);
     }
@@ -30,7 +35,8 @@
     }
   }
 
-  .vp-doc h2 {
+  :deep(.vp-doc h2) {
     margin-top: 24px;
   }
 }
+</style> 
